@@ -6,6 +6,7 @@
 
 html {
     min-height: 100%;
+    word-wrap: normal;
 }
 
 body {
@@ -111,4 +112,79 @@ td {
 
 .bl {
     margin: 1em;
+}
+
+@media screen and (min-width:961px) {
+    /*pc用のcssを記述*/
+}
+
+@media only screen and (max-width:500px) {
+    body {
+        font-size: 4vw;
+    }
+
+    table,
+    th,
+    td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 85%;
+        vertical-align: baseline;
+        background: transparent;
+        font-weight: normal;
+        text-align: left
+    }
+
+    .icon {
+        width: 60%;
+    }
+
+    .setsumei th {
+        padding-left: 1em;
+        font-size: 80%;
+        color: #555555;
+    }
+
+    .setsumei td {
+        font-size: 100%;
+    }
+
+    .thumbnail {
+        width: 100%;
+    }
+
+    /*上部メニュー*/
+    .nav {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        font-size: 85%;
+        background: #555;
+    }
+
+    .nav li {
+        list-style: none;
+        float: left;
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: #cccccc;
+        padding: 0.3em 12px;
+        display: block;
+    }
+
+    .nav li a:hover {
+        background: #666;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
 }
